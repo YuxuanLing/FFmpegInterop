@@ -12,7 +12,7 @@ if [ "$1" == "Win10" ]; then
         cd Output/Windows10/x86
         ../../../configure \
         --toolchain=msvc \
-        --disable-programs \
+##        --disable-programs 
         --disable-d3d11va \
         --disable-dxva2 \
         --arch=x86 \
@@ -22,6 +22,7 @@ if [ "$1" == "Win10" ]; then
         --extra-cflags="-MD -DWINAPI_FAMILY=WINAPI_FAMILY_APP -D_WIN32_WINNT=0x0A00" \
         --extra-ldflags="-APPCONTAINER WindowsApp.lib" \
         --prefix=../../../Build/Windows10/x86
+        make -j8
         make install
         popd
 
@@ -33,7 +34,7 @@ if [ "$1" == "Win10" ]; then
         cd Output/Windows10/x64
         ../../../configure \
         --toolchain=msvc \
-        --disable-programs \
+##        --disable-programs 
         --disable-d3d11va \
         --disable-dxva2 \
         --arch=x86_64 \
@@ -43,6 +44,7 @@ if [ "$1" == "Win10" ]; then
         --extra-cflags="-MD -DWINAPI_FAMILY=WINAPI_FAMILY_APP -D_WIN32_WINNT=0x0A00" \
         --extra-ldflags="-APPCONTAINER WindowsApp.lib" \
         --prefix=../../../Build/Windows10/x64
+        make -j8
         make install
         popd
 
@@ -67,6 +69,7 @@ if [ "$1" == "Win10" ]; then
         --extra-cflags="-MD -DWINAPI_FAMILY=WINAPI_FAMILY_APP -D_WIN32_WINNT=0x0A00 -D__ARM_PCS_VFP" \
         --extra-ldflags="-APPCONTAINER WindowsApp.lib" \
         --prefix=../../../Build/Windows10/ARM
+        make -j8
         make install
         popd
 
@@ -93,6 +96,7 @@ elif [ "$1" == "Win8.1" ]; then
         --extra-cflags="-MD -DWINAPI_FAMILY=WINAPI_FAMILY_PC_APP -D_WIN32_WINNT=0x0603" \
         --extra-ldflags="-APPCONTAINER" \
         --prefix=../../../Build/Windows8.1/x86
+        make -j8
         make install
         popd
 
@@ -114,6 +118,7 @@ elif [ "$1" == "Win8.1" ]; then
         --extra-cflags="-MD -DWINAPI_FAMILY=WINAPI_FAMILY_PC_APP -D_WIN32_WINNT=0x0603" \
         --extra-ldflags="-APPCONTAINER" \
         --prefix=../../../Build/Windows8.1/x64
+        make -j8
         make install
         popd
 
@@ -138,6 +143,7 @@ elif [ "$1" == "Win8.1" ]; then
         --extra-cflags="-MD -DWINAPI_FAMILY=WINAPI_FAMILY_PC_APP -D_WIN32_WINNT=0x0603 -D__ARM_PCS_VFP" \
         --extra-ldflags="-APPCONTAINER -MACHINE:ARM" \
         --prefix=../../../Build/Windows8.1/ARM
+        make -j8
         make install
         popd
 
@@ -167,6 +173,7 @@ elif [ "$1" == "Phone8.1" ]; then
         --extra-cflags="-MD -DWINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP -D_WIN32_WINNT=0x0603 -D__ARM_PCS_VFP" \
         --extra-ldflags="-APPCONTAINER -MACHINE:ARM -subsystem:console -opt:ref WindowsPhoneCore.lib RuntimeObject.lib PhoneAppModelHost.lib -NODEFAULTLIB:kernel32.lib -NODEFAULTLIB:ole32.lib" \
         --prefix=../../../Build/WindowsPhone8.1/ARM
+        make -j8
         make install
         popd
 
@@ -188,6 +195,7 @@ elif [ "$1" == "Phone8.1" ]; then
         --extra-cflags="-MD -DWINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP -D_WIN32_WINNT=0x0603" \
         --extra-ldflags="-APPCONTAINER -subsystem:console -opt:ref WindowsPhoneCore.lib RuntimeObject.lib PhoneAppModelHost.lib -NODEFAULTLIB:kernel32.lib -NODEFAULTLIB:ole32.lib" \
         --prefix=../../../Build/WindowsPhone8.1/x86
+        make -j8
         make install
         popd
 
@@ -214,6 +222,7 @@ elif [ "$1" == "Win7" ]; then
         --extra-cflags="-MD -D_WINDLL" \
         --extra-ldflags="-APPCONTAINER:NO -MACHINE:x86" \
         --prefix=../../../Build/Windows7/x86
+        make -j8
         make install
         popd
 
@@ -235,6 +244,7 @@ elif [ "$1" == "Win7" ]; then
         --extra-cflags="-MD -D_WINDLL" \
         --extra-ldflags="-APPCONTAINER:NO -MACHINE:x64" \
         --prefix=../../../Build/Windows7/x64
+        make -j8
         make install
         popd
 

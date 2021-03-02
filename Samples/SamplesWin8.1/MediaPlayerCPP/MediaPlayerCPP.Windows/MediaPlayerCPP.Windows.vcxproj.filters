@@ -20,13 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="MediaPlayerCPP.Windows_TemporaryKey.pfx" />
-    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\avcodec-57.dll" />
-    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\avdevice-57.dll" />
-    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\avfilter-6.dll" />
-    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\avformat-57.dll" />
-    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\avutil-55.dll" />
-    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\swresample-2.dll" />
-    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\swscale-4.dll" />
+    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\avcodec-58.dll" />
+    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\avdevice-58.dll" />
+    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\avfilter-7.dll" />
+    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\avformat-58.dll" />
+    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\avutil-56.dll" />
+    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\swresample-3.dll" />
+    <None Include="$(SolutionDir)ffmpeg\Build\Windows81\$(Platform)\bin\swscale-5.dll" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\Logo.scale-100.png">

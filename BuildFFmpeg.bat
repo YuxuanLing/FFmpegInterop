@@ -1,6 +1,6 @@
 @setlocal
 @echo off
-
+set MSYS2_BIN="C:\msys64\usr\bin\bash.exe"
 if "%1" == "/?" goto Usage
 if "%~1" == "" goto Usage
 
